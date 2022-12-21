@@ -7,9 +7,9 @@ def solution(s, n):
         a = ord(letter)
         
         if letter.isupper(): #대문자일 경우
-            a = ((a - 65) + n) % 26 + 65
+            a = ((a - ord('A')) + n) % 26 + 65
         elif letter.islower(): #소문자일 경우
-            a = ((a - 97) + n) % 26 + 97
+            a = ((a - ord('a')) + n) % 26 + 97
         
         answer += chr(a) 
         
