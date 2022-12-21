@@ -1,8 +1,9 @@
 def gcd(a, b):
+    # a is always smaller than b
     if a > b:
-        a, b = b, a
+        a, b = b, a 
     while b%a != 0:
-        b, a = a, b%a
+        a, b = b%a, a
     return a
 
 def solution(arr):
