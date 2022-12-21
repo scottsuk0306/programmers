@@ -8,7 +8,7 @@ def gcd(a, b):
 
 def solution(arr):
     answer = 1
-    arr = sorted(arr)
+    arr.sort()
 
     #두 개의 수끼리 최소공배수를 구하고 최소공배수와 다음 수의 최소공배수 구하기
     for i in range(1, len(arr)):
